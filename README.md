@@ -83,5 +83,10 @@ This work is licensed under a [Creative Commons Attribution-NonCommercial-ShareA
   - Inspired by Polymer for simplicity and performance, Vue offers a similar development style as HTML, styles and JS are composed in tandem
   - slightly better performance than React, no use of polyfills like Polymer and an isolated, less opinionated view than 
   Angular which is an MVC.
-- Directives
-  - v-text, v-html, v-show, v-if, v-else, v-else-if, v-for, v-on, v-bind, v-model, v-pre, v-cloak, v-once.
+  
+  ### Directives
+  - `v-text, v-html, v-show, v-if, v-else, v-else-if, v-for, v-on, v-bind, v-model, v-pre, v-cloak, v-once`
+  - `v-for`
+    - Loops through a set of values (aka item in items). Can also do a static number.
+  - `v-model`
+    - Creates a relationship between the data in the instance/component and a form input, so you can dynamically update values
