@@ -90,3 +90,38 @@ This work is licensed under a [Creative Commons Attribution-NonCommercial-ShareA
     - Loops through a set of values (aka item in items). Can also do a static number.
   - `v-model`
     - Creates a relationship between the data in the instance/component and a form input, so you can dynamically update values
+- Modifiers
+  - `v-model.trim` will strip any leading or trailing whitespace from the bound string
+  - `v-model.number` changes strings to number inputs
+  - `v-model.lazy` won’t populate the content automatically, it will wait to bind until an event happens. (It listens to change events instead of input)
+- `V-IF / V-SHOW`
+  - a conditional that will display information depending on meeting a requirement. This can be anything- buttons, forms, divs, components. `v-if` completes unmounts/mounts an element and `v-show` toggle visibility with `display: none;`
+- `V-IF/V-ELSE`
+  - Pretty straightforward- you can conditionally render one thing or another. There's also `v-else-if`
+- `V-BIND or :`
+  - One of the most useful directives so there's a shortcut! We can use it for so many things- class and style binding, creating dynamic props, etc...
+- `V-ONCE and V-PRE`
+  - Not quite as useful, `v-once` will not update once it's been rendered.
+  - `v-pre` will print out the inner text exactly how it is, including code (good for documentation
+- `V-ON or @`
+  - Extremely useful so there's a shortcut! `v-on` is great for binding to events like click and mouseenter. You're able to pass in a parameter for the event like (e). We can also use ternaries directly
+- Multiple Bindings
+  ```
+  <div v-on="
+    click   : onClick,
+    keyup   : onKeyup,
+    keydown : onKeydown
+  ">
+  </div>
+  ```
+- MODIFIERS:
+  - @mousemove.stop is comparable to e.stopPropogation()
+  - @mousemove.prevent this is like e.preventDefault()
+  - @submit.prevent this will no longer reload the page on submission
+  - @click.once not to be confused with v-once, this click event will be triggered once.
+  - @click.native so that you can listen to native events in the DOM
+  - Keycodes, and configure your own!
+- `V-HTML`
+  - Great for strings that have html elements that need to be rendered, such as a tags, strong tags, etc!
+- `V-TEXT`
+  - Similar to using mustache templates
