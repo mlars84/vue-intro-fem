@@ -63,3 +63,25 @@ Here are the directories for the Vuex exercise:
 [![Creative Commons License](https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-nc-sa/4.0/)
 
 This work is licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-nc-sa/4.0/)
+
+## Notes
+- Why Vue
+  - Declarative
+  - Legible
+  - Easy to Maintain
+  - Powerful
+  - A collection of the best of the best
+  - Elegant
+  - Gives you want you want when you need it, and gets out of your way
+  - A way to be really productive
+  - Fun
+- Compared to other frameworks
+  - A virtual DOM
+  - Reactive components that offer the View layer only
+  - Props and Redux-like store similar to React
+  - Conditional rendering and services, similar to Angular
+  - Inspired by Polymer for simplicity and performance, Vue offers a similar development style as HTML, styles and JS are composed in tandem
+  - slightly better performance than React, no use of polyfills like Polymer and an isolated, less opinionated view than 
+  Angular which is an MVC.
+- Directives
+  - v-text, v-html, v-show, v-if, v-else, v-else-if, v-for, v-on, v-bind, v-model, v-pre, v-cloak, v-once.
