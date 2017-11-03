@@ -125,3 +125,7 @@ This work is licensed under a [Creative Commons Attribution-NonCommercial-ShareA
   - Great for strings that have html elements that need to be rendered, such as a tags, strong tags, etc!
 - `V-TEXT`
   - Similar to using mustache templates
+
+### METHODS
+  - Are bound to the Vue instance, they are incredibly useful for functions you would like to access in directives
+  
