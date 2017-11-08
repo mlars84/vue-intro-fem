@@ -141,3 +141,29 @@ This work is licensed under a [Creative Commons Attribution-NonCommercial-ShareA
   - Cached
   - Should be used as a property, in place of data
   - By default getter only, but you can define a setter
+
+### Reactive Programming
+  - Watchers & Vue's Reactivity System
+  - is programming with asynchronous data streams
+  - A stream is a sequence of ongoing events ordered in time that offer some hooks with which to observe it. 
+  - When we use reactive premises for building apps, this means it's very easy to update state in reaction to events.
+  - [Andre Stalz post](https://gist.github.com/staltz/868e7e9bc2a7b8c1f754) on the intro to Reactive Programming you've been missing.
+
+### What is Reactive
+  - Angular 1.x has dirty checking
+  - Cycle.js and Angular 2 use reactive streams like XStream and Rx.js
+  - Vue.js, MobX or Ractive.js all use a variation of getters/setters.
+  - Despite the name, React is not Reactive - it uses a "pull" approach (rather than a "push")
+  - [Vue Reactivity Docs](https://vuejs.org/v2/guide/reactivity.html)
+  - [How to build a reactive engine in JS](https://www.monterail.com/blog/2016/how-to-build-a-reactive-engine-in-javascript-part-1-observable-objects)
+  
+### In Vue
+  - Vue takes the object, walks through it's properties and converts them to getters/setters
+  ```new Vue({
+    data: {
+      text: 'msg'
+    }
+  })
+  ```
+  - Vue cannot detect property addition or deletion, so we create this object to track
+  -   
