@@ -166,4 +166,14 @@ This work is licensed under a [Creative Commons Attribution-NonCommercial-ShareA
   })
   ```
   - Vue cannot detect property addition or deletion, so we create this object to track
-  -   
+
+### Watchers
+- Each component has a watcher instance
+- The properties touched by the watcher during the render are registered as dependencies
+- When the setter is triggered, it lets the watcher know and causes the component to re-render
+
+- The Vue instance is the middle man between the DOM and the business logic
+- Watch updates the DOM only if it's required- performing calculations in JS is really performant but accessing the DOM is not. So we have a Virtual DOM which is like a copy, but parsed in JavaScript
+- It will only update the DOM for things that need to be changed, which is faster.
+- Good for asynchronous updates and updates/transitions with data changes 
+- 
